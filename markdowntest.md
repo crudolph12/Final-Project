@@ -109,7 +109,7 @@ The plot above displays daily volatility in black, predicted daily volatility vi
 c(RMSE(Y_test,Yhat), RMSE(Y_test,YCVhat), RMSE(Y_test,0))
 ```
 
-    ## [1] 0.01299 0.01276 0.01352
+    ## [1] 0.01299 0.01288 0.01352
 
 #### Figure 5: Lasso Regression Plots for the top 5 companies
 
