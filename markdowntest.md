@@ -31,7 +31,7 @@ Results
 
 #### Figure 1: Daily Volatility
 
-![](markdowntest_files/figure-markdown_github/unnamed-chunk-2-1.png)
+![](https://raw.githubusercontent.com/crudolph12/hw3/master/figure1.png)
 
 Figure 1 displays the daily volatility for the previously established “top 5 companies” that we are tracking. For any given company during the chosen period, volatility rarely exceeds 10%. Apple appears to be the most volatile stock on a day-to-day basis.
 
@@ -75,7 +75,7 @@ Appendix
 
 #### Figure 3:Philip Morris Daily Volatility
 
-![](markdowntest_files/figure-markdown_github/unnamed-chunk-9-1.png)
+![](https://raw.githubusercontent.com/crudolph12/hw3/master/figure3.png)
 
 This figure confirms the hypothesis that Philip Morris has minimal daily volatility throughout the time period chosen for the project, lending credence to the idea that our predictive model prefered a low, constant volatility.
 
@@ -101,7 +101,7 @@ The variables we decided to use are as follows:
 
 After establishing this list, we ran a lasso regression on the train test split for many companies. As expected, our model can’t always explain the stock’s volatility. Often, lasso models selected by cross validation contained only the intercept, meaning the average would be better than the model we formed. However, some stocks were able to be predicted effectively. A specific example of this was the predictive model for Microsoft.
 
-![](markdowntest_files/figure-markdown_github/unnamed-chunk-11-1.png)
+![](https://raw.githubusercontent.com/crudolph12/hw3/master/figure4.png)
 
 The plot above displays daily volatility in black, predicted daily volatility via lasso in red(y\_hat1) and predicted daily volatility via cross validated lasso in blue (y\_hat2). It seems that the predicted lines do a respectable job of predicting volatility. The RMSE values reveal that the lasso model selected by cross validation is better than that selected by AIC and the model for 0.
 
@@ -109,7 +109,7 @@ The plot above displays daily volatility in black, predicted daily volatility vi
 c(RMSE(Y_test,Yhat), RMSE(Y_test,YCVhat), RMSE(Y_test,0))
 ```
 
-    ## [1] 0.01299 0.01288 0.01352
+    ## [1] 0.01299 0.01289 0.01352
 
 #### Figure 5: Lasso Regression Plots for the top 5 companies
 
